@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Sergio Tévar Alarcón</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #3a0ca3, #4361ee);
+            color: white;
+        }
+
+        header {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        header p {
+            opacity: 0.8;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            border-left: 5px solid #b5179e;
+            padding-left: 10px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            opacity: 0.7;
+        }
+
+        a {
+            color: #ffd6ff;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sergio Tévar Alarcón</h1>
+    <p>Estudiante de 1º DAM | Futuro desarrollador 💻</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>Sobre mí</h2>
+        <div class="card">
+            <p>Tengo 19 años y soy de Albacete. Actualmente estoy estudiando Desarrollo de Aplicaciones Multiplataforma (DAM).</p>
+            <p>Me interesa el desarrollo de software, especialmente el backend y el diseño de aplicaciones.</p>
+            <p>Siempre estoy aprendiendo cosas nuevas y mejorando mis habilidades en programación.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Proyectos</h2>
+        <div class="projects">
+            
+            <div class="card">
+                <h3>Gestor de tareas</h3>
+                <p>Aplicación en Java para organizar tareas diarias.</p>
+            </div>
+
+            <div class="card">
+                <h3>Web personal</h3>
+                <p>Diseño de página web con HTML y CSS moderno.</p>
+            </div>
+
+            <div class="card">
+                <h3>Base de datos</h3>
+                <p>Modelo de base de datos relacional en MySQL.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <div class="card">
+            <p>Email: <a href="mailto:jaboteser@gmail.com">jaboteser@gmail.com</a></p>
+            <p>Ubicación: Albacete, España</p>
+            <p>Disponible para prácticas 🚀</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Sergio Tévar Alarcón</p>
+</footer>
+
+</body>
+</html>
